@@ -29,10 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script defer src="auto-complete.js"></script>
+
 </head>
 <body>
 
@@ -82,55 +79,51 @@
 				</div>
 
 				<div class="wrap-input100 validate-input">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="Address line 1">
-					<span class="focus-input100"></span>
-					<label class="label-input100" for="phone">
-						<span class="lnr lnr-smartphone m-b-2"></span>
-					</label>
-				</div>
-
-				<div class="container">
 					<div class="panel panel-primary">
 					  
 					  <div class="panel-body">
-						<input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" class="form-control">
+						<label class="control-label">Enter your address</label>
+						<input id="autocomplete"  onFocus="geolocate()" type="text" class="form-control">
 						<div id="address">
-						  <div class="row">
+						  <!-- <div class="row">
 							<div class="col-md-6">
 							  <label class="control-label">Street address</label>
-							  <input class="form-control" id="street_number" disabled="true">
+							  <input class="form-control" id="street_number">
 							</div>
 							<div class="col-md-6">
 							  <label class="control-label">Route</label>
-							  <input class="form-control" id="route" disabled="true">
+							  <input class="form-control" id="route" >
 							</div>
-						  </div>
+						  </div> -->
 						  <div class="row">
 							<div class="col-md-6">
 							  <label class="control-label">City</label>
-							  <input class="form-control field" id="locality" disabled="true">
+							  <input class="form-control field" id="locality" >
 							</div>
 							<div class="col-md-6"> 
 							  <label class="control-label">State</label>
-							  <input class="form-control" id="administrative_area_level_1" disabled="true">
+							  <input class="form-control" id="administrative_area_level_1" >
 							</div>
 						  </div>
 						  <div class="row">
 							<div class="col-md-6">
 							  <label class="control-label">Zip code</label>
-							  <input class="form-control" id="postal_code" disabled="true">
+							  <input class="form-control" id="postal_code" >
 							</div>
 							<div class="col-md-6">
 							  <label class="control-label">Country</label>
-							  <input class="form-control" id="country" disabled="true">
+							  <input class="form-control" id="country" >
 							</div>
 						  </div>
 						</div>
 					  </div>
 					</div>
 				  </div>
-				  
-			
+				  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF2ZO2k06_R5EJwJ97UuCrgLFlXW_4mKI&libraries=places&callback=initAutocomplete" async defer></script>
+				  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"async defer></script>
+				  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" async defer></script>
+				  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+				  <script src="auto-complete.js" async defer></script>
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
@@ -159,7 +152,7 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	Global site tag (gtag.js) - Google Analytics
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -168,7 +161,6 @@
 
 	  gtag('config', 'UA-23581568-13');
 	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBftFF3TOmcw52mETKcc7IcE71kgmZCKfE&libraries=places&callback=initAutocomplete" async defer></script>
-
+	
 </body>
 </html>
