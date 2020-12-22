@@ -37,27 +37,21 @@
 				<img src="images/icons/logo.png" alt="LOGO">
 			</a>
 
-			<div>
-				<button class="btn-show-contact100">
-					Contact Us
-				</button>
-			</div>
+			
 		</div>
 	</div>
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<button class="btn-hide-contact100">
-				<i class="zmdi zmdi-close"></i>
-			</button>
+			
 
 			<div class="contact100-form-title" style="background-image: url(images/bg-02.jpg);">
-				<span>Contact Us</span>
+				<span>Company Details</span>
 			</div>
 
 			<form class="contact100-form validate-form">
 				<div class="wrap-input100 validate-input">
-					<input id="name" class="input100" type="text" name="name" placeholder="Full name">
+					<input id="name" class="input100" type="text" name="name" placeholder="Website/Company Name">
 					<span class="focus-input100"></span>
 					<label class="label-input100" for="name">
 						<span class="lnr lnr-user m-b-2"></span>
@@ -82,18 +76,56 @@
 					</label>
 				</div>
 
-
 				<div class="wrap-input100 validate-input">
-					<textarea id="message" class="input100" name="message" placeholder="Your comments..."></textarea>
-					<span class="focus-input100"></span>
-					<label class="label-input100 rs1" for="message">
-						<span class="lnr lnr-bubble"></span>
-					</label>
-				</div>
+					<div class="panel panel-primary">
+					  
+					  <div class="panel-body">
+						<label class="control-label">Enter your address</label>
+						<input id="autocomplete"  onFocus="geolocate()" type="text" class="form-control">
+						<div id="address">
+						  <!-- <div class="row">
+							<div class="col-md-6">
+							  <label class="control-label">Street address</label>
+							  <input class="form-control" id="street_number">
+							</div>
+							<div class="col-md-6">
+							  <label class="control-label">Route</label>
+							  <input class="form-control" id="route" >
+							</div>
+						  </div> -->
+						  <div class="row">
+							<div class="col-md-6">
+							  <label class="control-label">City</label>
+							  <input class="form-control field" id="locality" >
+							</div>
+							<div class="col-md-6"> 
+							  <label class="control-label">State</label>
+							  <input class="form-control" id="administrative_area_level_1" >
+							</div>
+						  </div>
+						  <div class="row">
+							<div class="col-md-6">
+							  <label class="control-label">Zip code</label>
+							  <input class="form-control" id="postal_code" >
+							</div>
+							<div class="col-md-6">
+							  <label class="control-label">Country</label>
+							  <input class="form-control" id="country" >
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF2ZO2k06_R5EJwJ97UuCrgLFlXW_4mKI&libraries=places&callback=initAutocomplete" async defer></script>
+				  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"async defer></script>
+				  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" async defer></script>
+				  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+				  <script src="auto-complete.js" async defer></script>
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
-						Send Now
+						SUBMIT
 					</button>
 				</div>
 			</form>
@@ -118,7 +150,7 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	Global site tag (gtag.js) - Google Analytics
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -127,5 +159,6 @@
 
 	  gtag('config', 'UA-23581568-13');
 	</script>
+	
 </body>
 </html>

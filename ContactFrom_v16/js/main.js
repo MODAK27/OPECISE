@@ -76,9 +76,13 @@
 
     /*==================================================================
     [ Show / hide contact ]*/
+<<<<<<< HEAD
     $('.btn-hide-contact100').on('click', function(){
         $('.container-contact100').fadeOut(300);
     });
+=======
+   
+>>>>>>> c426d27024417b45db25d7e9a1383d0fc822adfc
 
     $('.btn-show-contact100').on('click', function(){
         $('.container-contact100').fadeIn(300);
