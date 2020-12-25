@@ -9578,18 +9578,18 @@ body {
     touch-action: manipulation
 }
 
-.SEkd2Q {
+.flex {
     height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap
 }
 
-[dir] .SEkd2Q {
+[dir] .flex {
     background-color: #edf0f2
 }
 
-.SEkd2Q:focus {
+.flex:focus {
     outline: none
 }
 
